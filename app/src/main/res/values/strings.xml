@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CheckIP</string>
+    <string name="home_ip_button_text">check ip</string>
 </resources>
