@@ -15,7 +15,9 @@ class IpFragment : Fragment() {
         fun newInstance() = IpFragment()
     }
 
-    private val viewModel: IpViewModel by viewModels()
+    private val viewModel: IpViewModel by viewModels {
+        IpViewModelFactory(requireContext())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
